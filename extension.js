@@ -53,27 +53,27 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "kekBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
-        maximumAfk: 120,
-        afkRemoval: true,
+        startupEmoji: true, // true or false
+        maximumAfk: 12000,
+        afkRemoval: false,
         maximumDc: 60,
-        bouncerPlus: true,
+        bouncerPlus: false,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
-        cycleGuard: true,
+        cycleGuard: false,
         maximumCycletime: 10,
         voteSkip: false,
         voteSkipLimit: 10,
-        timeGuard: true,
-        maximumSongLength: 10,
+        timeGuard: false,
+        maximumSongLength: 1000,
         autodisable: true,
-        commandCooldown: 30,
+        commandCooldown: 0,
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
@@ -90,9 +90,9 @@
         motdEnabled: false,
         motdInterval: 5,
         motd: "Temporary Message of the Day",
-        filterChat: true,
+        filterChat: false,
         etaRestriction: false,
-        welcome: true,
+        welcome: false,
         opLink: null,
         rulesLink: null,
         themeLink: null,
@@ -101,7 +101,7 @@
         website: null,
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
